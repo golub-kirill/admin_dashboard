@@ -1,0 +1,31 @@
+.search {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.searchButton {
+	border: none;
+	background-color: transparent;
+}
+
+.searchInput {
+	border: none;
+	border-radius: 10px;
+	background-color: #1d1e2c;
+	color: rgba(219, 223, 234, 0.5);
+	font-size: 1rem;
+	padding: 0 1rem;
+	margin-right: 0.4rem;
+	transform: scale(0);
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.searchInput:focus,
+.searchInput:hover {
+	outline: 1.8px solid #dbdfea;
+}
+
+.visible {
+	transform: scale(1);
+	opacity: 1;
+}
