@@ -1,0 +1,13 @@
+.sidebar__wrapper {
+    width: 180px;
+    height: calc(100vh);
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    margin-right: 15px;
+    padding-left: 17px;
+    background-color: #24263A;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
