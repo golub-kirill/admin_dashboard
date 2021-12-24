@@ -1,0 +1,57 @@
+.ti__wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 60vw;
+	height: fit-content;
+	background-color: #24263a;
+	border-radius: 10px;
+	overflow: hidden;
+    padding: 1rem 0 0 1rem;
+    margin: 0 15px 15px 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.ti__wrapper:last-child {
+	margin-right: 0;
+}
+
+.ti__wrapper:hover {
+	transform: scale(1.05);
+}
+
+.ti__wrapper:hover .ti__value {
+	transform: scale(1.2);
+}
+
+.ti__textRows {
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	color: #dbdfea;
+}
+
+
+
+.ti__title {
+	font-size: 0.8em;
+    margin: 0 0 0.5rem 0;
+}
+
+.ti__value {
+	font-size: 1em;
+	font-weight: 900;
+    margin: 0 0 1rem 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.ti__collation {
+	font-weight: 900;
+	font-size: 0.8em;
+}
+
+.waves {
+
+    width: 100%;
+    transform: translate(40%, 70%) scale(2);
+}
