@@ -11,6 +11,8 @@ import {
 } from "recharts";
 
 export default function IncomeChart() {
+	const year = new Date().getFullYear();
+	const [yearFilter, setYearFilter] = React.useState(year);
 	const data = [
 		{
 			name: "jan",
@@ -94,7 +96,16 @@ export default function IncomeChart() {
 	};
 	return (
 		<div className={css.incomeChart__wrapper}>
-			<h2 className={css.incomeChart__title}>Income</h2>
+			<div className={css.title__wrapper}>
+				<h2 className={css.incomeChart__title}>Income</h2>
+				<select
+					className={css.incomeChart__select}
+					onChange={e => setYearFilter(e.target.value)}>
+					<option value={yearFilter}>{year - 1 + " Year"}</option>
+					<option value={yearFilter - 1}>{year + " Year"}</option>
+				</select>
+			</div>
+
 			<ResponsiveContainer
 				width="100%"
 				height="100%"
