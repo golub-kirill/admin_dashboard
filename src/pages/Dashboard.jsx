@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import TotalIndicator from "../components/TotalIndicator/TotalIndicator";
 import SalesChart from "../components/SalesChart/SalesChart";
 import IncomeChart from "../components/IncomeChart/IncomeChart";
+import LastTransactions from "../components/LastTransactions/LastTransactions";
 
 export default function Dashboard() {
 	return (
@@ -36,6 +37,7 @@ export default function Dashboard() {
 				<SalesChart />
 				<div className={css.dashboard__row}>
 					<IncomeChart />
+					<LastTransactions />
 				</div>
 			</div>
 		</div>

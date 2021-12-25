@@ -1,0 +1,14 @@
+.lastTransactionsItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #dbdfea;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.lastTransactionsItem__title {
+    font-size: 0.8em;
+}
