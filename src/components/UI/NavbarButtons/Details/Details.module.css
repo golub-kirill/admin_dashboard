@@ -1,8 +1,8 @@
 .details__wrapper {
 	display: flex;
 	flex-direction: row;
-    align-items: center;
-    margin-left: 1rem;
+	align-items: center;
+	margin-left: 1rem;
 }
 
 .details__avatar {
@@ -14,10 +14,10 @@
 
 .details__name {
 	font-size: 1rem;
-    max-width: 10rem;
+	max-width: 10rem;
 	font-weight: 400;
 	color: #dbdfea;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }

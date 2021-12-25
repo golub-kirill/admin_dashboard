@@ -1,23 +1,23 @@
 .sidebarButton {
-    display: flex;
-    flex-flow: row;
-    justify-content: start;
-    align-items: center;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-items: center;
 	border-radius: 100px 0px 0px 100px;
 	border: none;
-    background: #24263A;
+	background: #24263a;
 	color: #dbdfea;
-    padding: 0.5rem 0;
-    font-size: 1em;
+	padding: 0.5rem 0;
+	font-size: 1em;
 }
 
 .sidebarButton:hover {
-    background-color: #1d1e2c;
-    color: #dbdfea;
+	background-color: #1d1e2c;
+	color: #dbdfea;
 }
 
 .sidebarButtonIcon {
-    width: 15px;
-    height: 15px;
-    margin:0 1rem;
+	width: 15px;
+	height: 15px;
+	margin: 0 1rem;
 }

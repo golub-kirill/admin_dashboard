@@ -1,9 +1,9 @@
 .navbar__wrapper {
 	width: calc(85vw - 34px);
-	height: 12vh;
+	height: 10vh;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: end;
+	justify-content: flex-end;
 	background-color: #24263a;
 	margin-bottom: 15px;
 	border-bottom-left-radius: 20px;

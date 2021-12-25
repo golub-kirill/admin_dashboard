@@ -1,0 +1,23 @@
+.salesChart__wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	height: calc(35vh + 1rem);
+	background-color: #24263a;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.salesChart__title {
+	align-self: center;
+	margin: 0;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #dbdfea;
+	margin: 0 0 0.5rem 1rem;
+	padding-top: 1rem;
+}
+
+.salesChart {
+	transform: translateY(-30px);
+}

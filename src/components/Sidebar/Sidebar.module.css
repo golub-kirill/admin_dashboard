@@ -1,14 +1,14 @@
 .sidebar__wrapper {
-    width: 15vw;
-    min-width: fit-content;
-    height: 100vh;
-    display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    justify-content: start;
-    margin-right: 15px;
-    padding-left: 17px;
-    background-color: #24263A;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+	width: 15vw;
+	min-width: fit-content;
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	margin-right: 15px;
+	padding-left: 17px;
+	background-color: #24263a;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
