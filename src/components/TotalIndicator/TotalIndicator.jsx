@@ -21,7 +21,7 @@ export default function TotalIndicator({ title, value, collation, waves }) {
 		<div className={css.ti__wrapper}>
 			<div className={css.ti__textRows}>
 				<p className={css.ti__title}>{header}</p>
-				<p className={css.ti__value}>{store}</p>
+				<p className={css.ti__value}>$ {store}</p>
 				<p
 					className={css.ti__collation}
 					style={{ color: collationColor }}>

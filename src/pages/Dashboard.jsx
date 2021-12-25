@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import TotalIndicator from "../components/TotalIndicator/TotalIndicator";
 import SalesChart from "../components/SalesChart/SalesChart";
+import IncomeChart from "../components/IncomeChart/IncomeChart";
 
 export default function Dashboard() {
 	return (
@@ -16,23 +17,26 @@ export default function Dashboard() {
 				<div className={css.dashboard__row}>
 					<TotalIndicator
 						title="Total Balance"
-						value="$12,345"
+						value="12,345"
 						collation="12.94"
 					/>
 					<TotalIndicator
 						title="Total Expence"
-						value="$1,300"
+						value="1,300"
 						collation="-1.4"
 						waves={"/img/totalIndicatorIcons/waves2.svg"}
 					/>
 					<TotalIndicator
 						title="Total Savings"
-						value="$8,450"
+						value="8,450"
 						collation="32.7"
 						waves={"/img/totalIndicatorIcons/waves3.svg"}
 					/>
 				</div>
 				<SalesChart />
+				<div className={css.dashboard__row}>
+					<IncomeChart />
+				</div>
 			</div>
 		</div>
 	);

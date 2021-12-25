@@ -7,13 +7,12 @@ export default function SidebarButton({
 	onClick,
 	...props
 }) {
-	const [path] = React.useState(`"url(${iconPath})"`);
 	return (
 		<button
 			className={css.sidebarButton}
 			onClick={() => onClick}
 			{...props}>
-			<img className={css.sidebarButtonIcon} src={path} />
+			<img className={css.sidebarButtonIcon} src={iconPath} />
 			{children}
 		</button>
 	);

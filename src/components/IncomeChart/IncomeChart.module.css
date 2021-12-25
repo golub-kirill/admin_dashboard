@@ -1,16 +1,16 @@
-.salesChart__wrapper {
-	display: flex;
+.incomeChart__wrapper {
+    display: flex;
 	flex-direction: column;
-	width: 60vw;
-	height: calc(35vh + 1rem);
+	width: 30vw;
+    height: calc(30vh - 15px);
 	background-color: #24263a;
 	border-radius: 10px;
 	overflow: hidden;
-	margin: 0 15px 15px 0px;
+    margin-right: 15px;
 }
 
-.salesChart__title {
-	align-self: center;
+.incomeChart__title {
+    align-self: center;
 	margin: 0;
 	font-size: 1.1em;
 	font-weight: 400;
@@ -19,6 +19,6 @@
 	padding-top: 1rem;
 }
 
-.salesChart {
-	transform: translateY(-30px);
+.incomeChart {
+   transform: translateY(-10px);
 }

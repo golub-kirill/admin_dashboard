@@ -47,7 +47,13 @@ const data = [
 		"Current month": 4300,
 	},
 ];
-
+const tooltipStyle = {
+	backgroundColor: "#dbdfea80",
+	border: "none",
+	borderRadius: "5px",
+	color: "#24263a",
+	fontSize: "1rem",
+};
 export default function SalesChart() {
 	return (
 		<div className={css.salesChart__wrapper}>
@@ -56,7 +62,14 @@ export default function SalesChart() {
 				width="100%"
 				height={250}
 				className={css.salesChart}>
-				<AreaChart data={data}>
+				<AreaChart
+					data={data}
+					margin={{
+						top: 5,
+						right: 0,
+						left: 20,
+						bottom: 5,
+					}}>
 					<defs>
 						<linearGradient
 							id="salesChartGrad"
@@ -76,10 +89,10 @@ export default function SalesChart() {
 							/>
 						</linearGradient>
 					</defs>
-					<Tooltip />
+					<Tooltip contentStyle={tooltipStyle}/>
 					<Legend iconSize={10} iconType="circle" height={20} />
 					<XAxis dataKey="name" axisLine={false} tickLine={false} />
-					<YAxis axisLine={false} tickLine={false} />
+					<YAxis axisLine={false} tickLine={false} unit={" $"} />
 					<Area
 						type="monotone"
 						dataKey="Last month"
@@ -94,7 +107,7 @@ export default function SalesChart() {
 						stroke="#E03A45"
 						strokeWidth={2}
 						fillOpacity={1}
-						fill="url(#salesChart)"
+						fill="url(#salesChartGrad)"
 					/>
 				</AreaChart>
 			</ResponsiveContainer>

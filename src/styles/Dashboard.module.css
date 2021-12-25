@@ -9,4 +9,12 @@
 	display: flex;
 	flex-flow: row nowrap;
 	width: 60vw;
+	height: fit-content;
 }
+
+tspan {
+	font-size: 0.8em;
+	fill: #dbdfea;
+	fill-opacity: 0.5;
+}
+
