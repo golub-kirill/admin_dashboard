@@ -42,21 +42,3 @@
 	margin: 2rem 0;
 	cursor: pointer;
 }
-
-.rotate {
-	transform: rotateY(360deg);
-	animation: fadeIn 0.7s ease-in-out;
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}

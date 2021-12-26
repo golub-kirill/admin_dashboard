@@ -1,7 +1,7 @@
 import React from "react";
 import css from "./BarsWrapper.module.css";
-import Sidebar from "../components/Sidebar/Sidebar"
-import Navbar from "../components/Navbar/Navbar"
+import Sidebar from "../../components/Sidebar/Sidebar"
+import Navbar from "../../components/Navbar/Navbar"
 
 export default function BarsWrapper({wrappedComponent}) {
 	return (

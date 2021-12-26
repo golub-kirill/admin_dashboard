@@ -1,13 +1,27 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Auth from "./pages/Auth";
-import BarsWrapper from "./hoc/BarsWrapper";
+import AuthWrapper from "./hoc/AuthWrapper/AuthWrapper";
+import BarsWrapper from "./hoc/BarsWrapper/BarsWrapper";
 import Dashboard from "./pages/Dashboard";
+import WelcomeForm from "./components/Auth/WelcomeForm/WelcomeForm";
+import LoginForm from "./components/Auth/LoginForm/LoginForm";
+import RegisterForm from "./components/Auth/RegisterForm/RegisterForm";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/auth" element={<Auth />}/>
+				<Route
+					path="/auth/welcome"
+					element={<AuthWrapper wrappedComponent={<WelcomeForm />} />}
+				/>
+				<Route
+					path="/auth/login"
+					element={<AuthWrapper wrappedComponent={<LoginForm />} />}
+				/>
+				<Route
+					path="/auth/register"
+					element={<AuthWrapper wrappedComponent={<RegisterForm />} />}
+				/>
 				<Route
 					path="/dash"
 					element={<BarsWrapper wrappedComponent={<Dashboard />} />}
