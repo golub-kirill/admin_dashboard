@@ -6,11 +6,13 @@ import css from "./Sidebar.module.css";
 export default function Sidebar() {
 	return (
 		<div className={css.sidebar__wrapper}>
-			<h1 className={css.sidebar__title}>Your logo</h1>
+			<img src="/logo.svg" alt="logo" className={css.logo} />
 			<Divider />
-			<SidebarButton iconPath={"/img/buttonIcons/dashboard.svg"}>
+
+			<SidebarButton iconPath={"/img/buttonIcons/dashboard.svg"} to="dash">
 				Dashboard
 			</SidebarButton>
+
 			<SidebarButton iconPath={"/img/buttonIcons/userProfile.svg"}>
 				User profile
 			</SidebarButton>

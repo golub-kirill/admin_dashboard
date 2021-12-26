@@ -12,11 +12,7 @@ import Leftovers from "../components/Leftovers/Leftovers";
 export default function Dashboard() {
 	return (
 		<div className={css.dashboard}>
-			<div className={css.dashboard__col}>
-				<Sidebar />
-			</div>
-			<div className={css.dashboard__col}>
-				<Navbar />
+			
 				<div className={css.dashboard__row}>
 					<div className={css.dashboard__col}>
 						<div className={css.dashboard__row}>
@@ -50,7 +46,7 @@ export default function Dashboard() {
 						<Leftovers />
 					</div>
 				</div>
-			</div>
+		
 		</div>
 	);
 }

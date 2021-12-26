@@ -12,3 +12,13 @@
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
+
+.logo {
+	width: 30%;
+	height: auto;
+	margin-top: 20px;
+}
+
+.selected {
+	background-color: #171825;
+}

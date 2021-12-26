@@ -60,8 +60,8 @@
 	overflow-x: hidden;
 	padding: 0.5rem 1rem;
 	margin: 0 0 1rem 0;
-    scrollbar-width: thin;
-  scrollbar-color: #1d1e2c transparent;
+	scrollbar-width: thin;
+	scrollbar-color: #1d1e2c transparent;
 }
 
 .leftovers__item {
@@ -71,7 +71,7 @@
 	align-items: center;
 	width: 100%;
 	height: fit-content;
-    padding: 0.5rem 0.5rem;
+	padding: 0.5rem 0.5rem;
 	color: #dbdfea;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;

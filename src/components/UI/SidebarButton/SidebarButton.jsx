@@ -1,19 +1,14 @@
 import React from "react";
 import css from "./SidebarButton.module.css";
+import { NavLink } from "react-router-dom";
 
-export default function SidebarButton({
-	iconPath,
-	children,
-	onClick,
-	...props
-}) {
+
+export default function SidebarButton({ iconPath, children, to = ""}) {
+	
 	return (
-		<button
-			className={css.sidebarButton}
-			onClick={() => onClick}
-			{...props}>
+		<div className={css.sidebarButton}>
 			<img className={css.sidebarButtonIcon} src={iconPath} />
-			{children}
-		</button>
+			<NavLink to={"/"+ to}>{children}</NavLink>
+		</div>
 	);
 }
