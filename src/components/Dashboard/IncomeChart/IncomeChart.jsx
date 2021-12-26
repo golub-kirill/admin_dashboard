@@ -99,17 +99,15 @@ export default function IncomeChart() {
 				<h2 className={css.incomeChart__title}>Income</h2>
 				<select
 					className={css.incomeChart__select}
-					onChange={e => setYearFilter(e.target.value)}>
+					onChange={(e) => setYearFilter(e.target.value)}>
 					<option value={yearFilter}>{year - 1 + " Year"}</option>
 					<option value={yearFilter - 1}>{year + " Year"}</option>
 				</select>
 			</div>
 
-			<ResponsiveContainer
-				width="100%"
-				height="100%"
-				className={css.incomeChart}>
+			<ResponsiveContainer className={css.incomeChart} height="100%">
 				<BarChart
+				
 					data={data}
 					margin={{
 						top: 5,
@@ -124,7 +122,12 @@ export default function IncomeChart() {
 						tickLine={false}
 						interval={0}
 					/>
-					<YAxis axisLine={false} tickLine={false} unit={" $"} />
+					<YAxis
+						axisLine={false}
+						tickLine={false}
+						unit={" $"}
+						interval={0}
+					/>
 					<Tooltip
 						cursor={{ fill: "#1D1E2C80" }}
 						contentStyle={tooltipStyle}

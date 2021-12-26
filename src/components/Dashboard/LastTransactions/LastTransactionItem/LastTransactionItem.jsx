@@ -1,6 +1,6 @@
 import React from "react";
 import css from "./LastTransactionItem.module.css";
-import Divider from "../../UI/Divider/Divider";
+import Divider from "../../../UI/Divider/Divider";
 
 export default function LastTransactionItem({ title, amount }) {
 	const [amountColor] = React.useState(amount >= 0 ? "#34e4b5" : "#E03A45");

@@ -1,11 +1,9 @@
 import React from "react";
 import css from "../styles/Dashboard.module.css";
-import Navbar from "../components/Navbar/Navbar";
-import Sidebar from "../components/Sidebar/Sidebar";
 import TotalIndicator from "../components/Dashboard/TotalIndicator/TotalIndicator";
 import SalesChart from "../components/Dashboard/SalesChart/SalesChart";
 import IncomeChart from "../components/Dashboard/IncomeChart/IncomeChart";
-import LastTransactions from "../components/LastTransactions/LastTransactions";
+import LastTransactions from "../components/Dashboard/LastTransactions/LastTransactions";
 import Card from "../components/Dashboard/Card/Card";
 import Leftovers from "../components/Dashboard/Leftovers/Leftovers";
 
