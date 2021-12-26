@@ -22,3 +22,8 @@
 .salesChart {
 	transform: translateY(-30px);
 }
+
+.salesChart span {
+	font-size: 0.8em;
+	font-weight: 400;
+}

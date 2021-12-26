@@ -2,6 +2,7 @@ import React from "react";
 import css from "./AuthForm.module.css";
 import classNames from "classnames";
 import StyledInput from "../UI/StyledInput/StyledInput";
+import { NavLink } from "react-router-dom";
 
 export default function AuthForm({changeStageBackground}) {
 	const [rotate, setRotate] = React.useState(false);
@@ -82,11 +83,14 @@ export default function AuthForm({changeStageBackground}) {
 							onChange={(e) => setConfirmPassword(e.target.value)}
 						/>
 					</div>
-					<button
+					{/* <button
 						className={css.form__button}
 						onClick={() => changeStage("Get Started", "Welcome")}>
 						{stage}
-					</button>
+					</button> */}
+					<NavLink to="/dash" className={css.form__button} >
+					{stage}
+					</NavLink>
 					<span
 						className={css.form__subtitle}
 						onClick={() => changeStage("Login", "Sign In")}>

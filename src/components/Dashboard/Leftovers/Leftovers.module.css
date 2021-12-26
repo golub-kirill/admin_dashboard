@@ -17,6 +17,8 @@
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 	margin: 0 1rem 1rem 1rem;
 }
@@ -39,6 +41,8 @@
 	font-size: 0.8em;
 	border-radius: 20px;
 	border: none;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 	text-align: center;
 	padding: 0.5rem 1.5rem;
@@ -64,12 +68,27 @@
 	scrollbar-color: #1d1e2c transparent;
 }
 
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1d1e2c;
+    -webkit-border-radius: 1ex;
+	border-radius: 1ex;
+}
+
+
 .leftovers__item {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 	padding: 0.5rem 0.5rem;
 	color: #dbdfea;

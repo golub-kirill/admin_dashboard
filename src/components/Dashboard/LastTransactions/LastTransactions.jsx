@@ -9,11 +9,11 @@ export default function LastTransactions() {
 			amount: 10.45,
 		},
 		{
-			title: "Насосал",
+			title: "Доход от продажи",
 			amount: 300,
 		},
 		{
-			title: "Проебал",
+			title: "Расход на покупку",
 			amount: -310.45,
 		},
 	]);

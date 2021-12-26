@@ -21,7 +21,7 @@ export default function Auth() {
 			<div className={css.auth__content}>
 				<div className={css.auth__leftSide}>
 					<span className={css.auth__title}>
-						Ну полный блять пиздец...
+						Очень воодушевлюющий слоган...
 					</span>
 					<img
 						src="/logo.svg"

@@ -9,7 +9,7 @@ function App() {
 			<Routes>
 				<Route path="/auth" element={<Auth />}/>
 				<Route
-					path="/"
+					path="/dash"
 					element={<BarsWrapper wrappedComponent={<Dashboard />} />}
 				/>
 			</Routes>
