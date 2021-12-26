@@ -24,8 +24,8 @@ export default function LastTransactions() {
 				<h2 className={css.lastTransactions__title}>
 					Latest Transactions
 				</h2>
-				<select className={css.lastTransactions__select}>
-					<option selected>All</option>
+				<select defaultValue={"All"} className={css.lastTransactions__select}>
+					<option>All</option>
 					<option>Income</option>
 					<option>Expenses</option>
 				</select>

@@ -7,6 +7,7 @@ import SalesChart from "../components/SalesChart/SalesChart";
 import IncomeChart from "../components/IncomeChart/IncomeChart";
 import LastTransactions from "../components/LastTransactions/LastTransactions";
 import Card from "../components/Card/Card";
+import Leftovers from "../components/Leftovers/Leftovers";
 
 export default function Dashboard() {
 	return (
@@ -46,6 +47,7 @@ export default function Dashboard() {
 
 					<div className={css.dashboard__col}>
 						<Card />
+						<Leftovers />
 					</div>
 				</div>
 			</div>

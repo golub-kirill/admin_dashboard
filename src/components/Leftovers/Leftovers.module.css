@@ -1,0 +1,83 @@
+.leftovers__wrapper {
+	width: calc(20vw - 1rem);
+	height: calc(50vh - 15px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #24263a;
+	border-radius: 10px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 0.5rem;
+}
+.title__wrapper {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	height: fit-content;
+	margin: 0 1rem 1rem 1rem;
+}
+
+.leftovers__title {
+	align-self: center;
+	margin: 0 0 0 15px;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #dbdfea;
+	margin: 0 0 0.5rem 1rem;
+	padding-top: 1rem;
+}
+
+.leftovers__select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-color: #1d1e2c;
+	color: #dbdfea;
+	font-size: 0.8em;
+	border-radius: 20px;
+	border: none;
+	height: fit-content;
+	text-align: center;
+	padding: 0.5rem 1.5rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.leftovers__select:hover {
+	background-color: #353853;
+}
+
+.leftovers__select option {
+	background-color: #1d1e2c;
+}
+
+.leftovers__list {
+	width: calc(100% - 2rem);
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0.5rem 1rem;
+	margin: 0 0 1rem 0;
+    scrollbar-width: thin;
+  scrollbar-color: #1d1e2c transparent;
+}
+
+.leftovers__item {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: fit-content;
+    padding: 0.5rem 0.5rem;
+	color: #dbdfea;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.leftovers__item:hover {
+	transform: scale(1.05);
+	background-color: #1d1e2c;
+}

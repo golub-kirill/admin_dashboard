@@ -65,8 +65,8 @@ export default function Card() {
 						x2="157.991"
 						y2="47.4884"
 						gradientUnits="userSpaceOnUse">
-						<stop stop-color="#DC2430" />
-						<stop offset="1" stop-color="#7B4397" />
+						<stop stopColor="#DC2430" />
+						<stop offset="1" stopColor="#7B4397" />
 					</linearGradient>
 					<linearGradient
 						id="paint1_linear_4_1580"
@@ -75,11 +75,11 @@ export default function Card() {
 						x2="131.691"
 						y2="59.1794"
 						gradientUnits="userSpaceOnUse">
-						<stop stop-color="#7B4397" stop-opacity="0" />
+						<stop stopColor="#7B4397" stopOpacity="0" />
 						<stop
 							offset="1"
-							stop-color="#7B4397"
-							stop-opacity="0.8"
+							stopColor="#7B4397"
+							stopOpacity="0.8"
 						/>
 					</linearGradient>
 					<linearGradient
@@ -89,11 +89,11 @@ export default function Card() {
 						x2="80.987"
 						y2="100.837"
 						gradientUnits="userSpaceOnUse">
-						<stop offset="0.3014" stop-color="#DC2430" />
+						<stop offset="0.3014" stopColor="#DC2430" />
 						<stop
 							offset="1"
-							stop-color="#DC2430"
-							stop-opacity="0"
+							stopColor="#DC2430"
+							stopOpacity="0"
 						/>
 					</linearGradient>
 				</defs>
