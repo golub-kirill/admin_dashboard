@@ -2,12 +2,12 @@ import React from "react";
 import css from "../styles/Dashboard.module.css";
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
-import TotalIndicator from "../components/TotalIndicator/TotalIndicator";
-import SalesChart from "../components/SalesChart/SalesChart";
-import IncomeChart from "../components/IncomeChart/IncomeChart";
+import TotalIndicator from "../components/Dashboard/TotalIndicator/TotalIndicator";
+import SalesChart from "../components/Dashboard/SalesChart/SalesChart";
+import IncomeChart from "../components/Dashboard/IncomeChart/IncomeChart";
 import LastTransactions from "../components/LastTransactions/LastTransactions";
-import Card from "../components/Card/Card";
-import Leftovers from "../components/Leftovers/Leftovers";
+import Card from "../components/Dashboard/Card/Card";
+import Leftovers from "../components/Dashboard/Leftovers/Leftovers";
 
 export default function Dashboard() {
 	return (

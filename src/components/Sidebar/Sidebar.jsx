@@ -8,11 +8,9 @@ export default function Sidebar() {
 		<div className={css.sidebar__wrapper}>
 			<img src="/logo.svg" alt="logo" className={css.logo} />
 			<Divider />
-
 			<SidebarButton iconPath={"/img/buttonIcons/dashboard.svg"} to="dash">
 				Dashboard
 			</SidebarButton>
-
 			<SidebarButton iconPath={"/img/buttonIcons/userProfile.svg"}>
 				User profile
 			</SidebarButton>
