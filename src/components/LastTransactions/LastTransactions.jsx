@@ -31,12 +31,13 @@ export default function LastTransactions() {
 				</select>
 			</div>
 			<div className={css.lastTransactions__list}>
-				{transactions.map(transaction => 
+				{transactions.map((transaction, index) => (
 					<LastTransactionItem
+						key={index}
 						title={transaction.title}
 						amount={transaction.amount}
 					/>
-				)}
+				))}
 			</div>
 		</div>
 	);

@@ -11,7 +11,6 @@ export default function LastTransactionItem({ title, amount }) {
 	return (
 		<div className={css.lastTransactionsItem__wrapper}>
 			<div className={css.lastTransactionsItem}>
-                {console.log(amountColor, amountValue)}
 				<span className={css.lastTransactionsItem__title}>{title}</span>
 				<span
 					className={css.lastTransactionsItem__amount}

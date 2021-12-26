@@ -7,6 +7,11 @@
     padding: 0 0.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.lastTransactionsItem:hover {
+   transform: scale(1.05);
 }
 
 .lastTransactionsItem__title {
