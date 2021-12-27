@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import AuthWrapper from "./hoc/AuthWrapper/AuthWrapper";
 import BarsWrapper from "./hoc/BarsWrapper/BarsWrapper";
 import Dashboard from "./pages/Dashboard";
@@ -8,10 +8,10 @@ import RegisterForm from "./components/Auth/RegisterForm/RegisterForm";
 
 function App() {
 	return (
-		<BrowserRouter>
+		
 			<Routes>
 				<Route
-					path="/auth/welcome"
+					path="/"
 					element={<AuthWrapper wrappedComponent={<WelcomeForm />} />}
 				/>
 				<Route
@@ -27,7 +27,7 @@ function App() {
 					element={<BarsWrapper wrappedComponent={<Dashboard />} />}
 				/>
 			</Routes>
-		</BrowserRouter>
+		
 	);
 }
 

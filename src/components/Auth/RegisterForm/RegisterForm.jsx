@@ -13,7 +13,7 @@ export default function RegisterForm() {
 				<StyledInput type="password" placeholder="Password" />
 				<StyledInput type="password" placeholder="Confirm Password" />
 			</div>
-			<NavLink type="submit" to="/dash" className={css.form__button}>
+			<NavLink type="submit" to="/" className={css.form__button}>
 				Register
 			</NavLink>
 			<span className={css.form__subtitle}>
