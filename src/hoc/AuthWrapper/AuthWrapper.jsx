@@ -4,7 +4,6 @@ import SvgBackground from "../../components/UI/SvgBackground/SvgBackground";
 import WelcomeForm from "../../components/Auth/WelcomeForm/WelcomeForm";
 
 export default function AuthWrapper({ wrappedComponent }) {
-
 	const color = useMemo(() => {
 		switch (wrappedComponent.type.name) {
 			case "WelcomeForm":
@@ -17,7 +16,6 @@ export default function AuthWrapper({ wrappedComponent }) {
 				return "#DB2379";
 		}
 	}, [wrappedComponent.type.name]);
-	console.log(wrappedComponent.type.name);
 	return (
 		<div className={css.auth__wrapper}>
 			<div className={css.auth__content}>
