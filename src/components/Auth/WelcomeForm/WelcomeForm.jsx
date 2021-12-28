@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import css from "../style/FormStyle.module.css";
-import StyledInput from "../../UI/StyledInput/StyledInput";
 import { NavLink } from "react-router-dom";
 
 export default function WelcomeForm() {
@@ -8,7 +7,7 @@ export default function WelcomeForm() {
 		<form className={css.form}>
 			<h1 className={css.form__title}>Welcome</h1>
 			<div className={css.input__container}>
-				<StyledInput placeholder="Email" />
+			<input className={css.input} placeholder="Email" type="email"></input>
 			</div>
 			<NavLink to="/auth/login" className={css.form__button}>
 				Get Started

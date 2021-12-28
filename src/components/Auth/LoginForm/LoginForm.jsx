@@ -1,6 +1,5 @@
 import React from "react";
 import css from "../style/FormStyle.module.css";
-import StyledInput from "../../UI/StyledInput/StyledInput";
 import { NavLink } from "react-router-dom";
 
 export default function LoginForm() {
@@ -8,8 +7,8 @@ export default function LoginForm() {
 		<form className={css.form}>
 			<h1 className={css.form__title}>Sign in</h1>
 			<div className={css.input__container}>
-				<StyledInput type="email" placeholder="Email" />
-				<StyledInput type="password" placeholder="Password" />
+			<input className={css.input} placeholder="Email" type="email"></input>
+			<input className={css.input} placeholder="Password" type="password"></input>
 			</div>
 			<NavLink
 				type="submit"
