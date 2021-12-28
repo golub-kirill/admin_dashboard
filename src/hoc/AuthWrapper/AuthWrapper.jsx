@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
 import css from "./AuthWrapper.module.css";
 import SvgBackground from "../../components/UI/SvgBackground/SvgBackground";
-import WelcomeForm from "../../components/Auth/WelcomeForm/WelcomeForm";
 
 export default function AuthWrapper({ wrappedComponent }) {
 	const color = useMemo(() => {
