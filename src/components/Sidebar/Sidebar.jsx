@@ -11,7 +11,7 @@ export default function Sidebar() {
 			<SidebarButton iconPath={"/img/buttonIcons/dashboard.svg"} to="dash">
 				Dashboard
 			</SidebarButton>
-			<SidebarButton iconPath={"/img/buttonIcons/userProfile.svg"}>
+			<SidebarButton iconPath={"/img/buttonIcons/userProfile.svg"} to="user">
 				User profile
 			</SidebarButton>
 			<SidebarButton iconPath={"/img/buttonIcons/messages.svg"}>
@@ -37,7 +37,7 @@ export default function Sidebar() {
 				Support
 			</SidebarButton>
 			<Divider />
-			<SidebarButton iconPath={"/img/buttonIcons/logout.svg"} to="/">
+			<SidebarButton iconPath={"/img/buttonIcons/logout.svg"} to="">
 				Log out
 			</SidebarButton>
 		</div>

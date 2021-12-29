@@ -1,5 +1,6 @@
 import React from "react";
 import css from "./Details.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Details() {
 	const [avatarSrc, setAvatarSrc] = React.useState(
@@ -10,7 +11,7 @@ export default function Details() {
 	return (
 		<div className={css.details__wrapper}>
 			<img className={css.details__avatar} src={avatarSrc} />
-			<span className={css.details__name}>{name}</span>
+			<NavLink to="/user" replace className={css.details__name}>{name}</NavLink>
 			<img
 				className={css.details__arrow}
 				src="/img/navbarIcons/chevron.svg"
