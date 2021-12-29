@@ -1,6 +1,9 @@
 import React, { useMemo } from "react";
 import css from "./AuthWrapper.module.css";
 import SvgBackground from "../../components/UI/SvgBackground/SvgBackground";
+import WelcomeForm from "../../components/Auth/WelcomeForm/WelcomeForm";
+import LoginForm from "../../components/Auth/LoginForm/LoginForm";
+import RegisterForm from "../../components/Auth/RegisterForm/RegisterForm";
 
 export default function AuthWrapper({ wrappedComponent }) {
 	const color = useMemo(() => {
@@ -15,6 +18,7 @@ export default function AuthWrapper({ wrappedComponent }) {
 				return "#DB2379";
 		}
 	}, [wrappedComponent.type.name]);
+
 	return (
 		<div className={css.auth__wrapper}>
 			<div className={css.auth__content}>
@@ -28,6 +32,7 @@ export default function AuthWrapper({ wrappedComponent }) {
 						className={css.auth__logo}
 					/>
 				</div>
+
 				{wrappedComponent}
 			</div>
 			<SvgBackground color={color} />

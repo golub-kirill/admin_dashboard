@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import css from "../style/FormStyle.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import ErrorMessage from "../../UI/ErrorMessage/ErrorMessage";
+import classNames from "classnames";
+import ErrorMessages from "../../UI/ErrorMessages/ErrorMessages";
 
 export default function RegisterForm() {
+	const [errorMessages, setErrorMessages] = React.useState(null);
+	const [isFlipping, setIsFlipping] = React.useState(false);
+	const formClasses = classNames(css.form, {
+		[css.flip_shade]: isFlipping,
+	});
 	const navigate = useNavigate();
 	const formik = useFormik({
 		initialValues: {
@@ -29,12 +35,29 @@ export default function RegisterForm() {
 				.required("Please confirm your password"),
 		}),
 		onSubmit: (values) => {
-			navigate("/auth/login");
+			setIsFlipping(!isFlipping);
+			setTimeout(() => navigate("/auth/login"), 500);
 		},
 	});
 
+	let arr = [];
+	useEffect(() => {
+		if (formik.errors.email && formik.touched.email)
+			arr.push(formik.errors.email);
+		if (formik.errors.phone && formik.touched.phone)
+			arr.push(formik.errors.phone);
+		if (formik.errors.password && formik.touched.password)
+			arr.push(formik.errors.password);
+		if (formik.errors.passwordConfirm && formik.touched.passwordConfirm)
+			arr.push(formik.errors.passwordConfirm);
+		if (!formik.errors) {
+			arr = [];
+		}
+		arr.length > 0 ? setErrorMessages(arr) : setErrorMessages(null);
+	}, [formik.errors, formik.touched]);
 	return (
-		<form className={css.form} onSubmit={formik.handleSubmit}>
+		<form className={formClasses} onSubmit={formik.handleSubmit}>
+			<ErrorMessages errors={errorMessages} />
 			<h1 className={css.form__title}>Sign Up</h1>
 			<div className={css.input__container}>
 				<input
@@ -54,9 +77,7 @@ export default function RegisterForm() {
 						}
 					}
 				/>
-				{formik.touched.email && formik.errors.email && (
-					<ErrorMessage error={formik.errors.email} />
-				)}
+
 				<input
 					className={css.input}
 					placeholder="Phone"
@@ -73,9 +94,7 @@ export default function RegisterForm() {
 						}
 					}
 				/>
-				{formik.touched.phone && formik.errors.phone && (
-					<ErrorMessage error={formik.errors.phone} />
-				)}
+
 				<input
 					className={css.input}
 					placeholder="Password"
@@ -92,9 +111,7 @@ export default function RegisterForm() {
 						}
 					}
 				/>
-				{formik.touched.password && formik.errors.password && (
-					<ErrorMessage error={formik.errors.password} />
-				)}
+
 				<input
 					className={css.input}
 					placeholder="Confirm Password"
@@ -111,10 +128,6 @@ export default function RegisterForm() {
 						}
 					}
 				/>
-				{formik.touched.passwordConfirm &&
-					formik.errors.passwordConfirm && (
-						<ErrorMessage error={formik.errors.passwordConfirm} />
-					)}
 			</div>
 
 			<button

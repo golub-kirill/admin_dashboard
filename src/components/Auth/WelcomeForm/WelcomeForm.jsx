@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import css from "../style/FormStyle.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import ErrorMessage from "../../UI/ErrorMessage/ErrorMessage";
+import classNames from "classnames";
+import ErrorMessages from "../../UI/ErrorMessages/ErrorMessages";
 
-export default function WelcomeForm() {
+export default function WelcomeForm({ errorsHandler }) {
+	const [errorMessages, setErrorMessages] = React.useState(null);
+	const [isFlipping, setIsFlipping] = React.useState(false);
+	const formClasses = classNames(css.form, {
+		[css.flip_shade]: isFlipping,
+	});
 	const navigate = useNavigate();
 	const formik = useFormik({
 		initialValues: {
@@ -17,11 +23,25 @@ export default function WelcomeForm() {
 				.required("Email is required"),
 		}),
 		onSubmit: (values) => {
-			navigate("/auth/login");
+			setIsFlipping(!isFlipping);
+			setTimeout(() => navigate("/auth/login"), 500);
 		},
 	});
+	let arr = [];
+	useEffect(() => {
+		if (formik.errors.email && formik.touched.email)
+			arr.push(formik.errors.email);
+		if (formik.errors.password && formik.touched.password)
+			arr.push(formik.errors.password);
+		if (!formik.errors) {
+			arr = [];
+		}
+		arr.length > 0 ? setErrorMessages(arr) : setErrorMessages(null);
+	}, [formik.errors, formik.touched]);
+
 	return (
-		<form className={css.form} onSubmit={formik.handleSubmit}>
+		<form className={formClasses} onSubmit={formik.handleSubmit}>
+			<ErrorMessages errors={errorMessages} />
 			<h1 className={css.form__title}>Welcome</h1>
 			<div className={css.input__container}>
 				<input
@@ -41,9 +61,6 @@ export default function WelcomeForm() {
 						}
 					}
 				/>
-				{formik.touched.email && formik.errors.email && (
-					<ErrorMessage error={formik.errors.email} />
-				)}
 			</div>
 			<button
 				type="submit"

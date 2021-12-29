@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import css from "../style/FormStyle.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import ErrorMessage from "../../UI/ErrorMessage/ErrorMessage";
+import classNames from "classnames";
+import ErrorMessages from "../../UI/ErrorMessages/ErrorMessages";
 
 export default function LoginForm() {
+	const [errorMessages, setErrorMessages] = React.useState(null);
+
+	const [isFlipping, setIsFlipping] = React.useState(false);
+	const formClasses = classNames(css.form, {
+		[css.flip_shade]: isFlipping,
+	});
 	const navigate = useNavigate();
 	const formik = useFormik({
 		initialValues: {
@@ -18,14 +25,27 @@ export default function LoginForm() {
 				.required("Email is required"),
 			password: Yup.string()
 				.min(8, "Password must be at least 8 characters")
-				.required("Password must be at least 8 characters"),
+				.required("Password is required"),
 		}),
 		onSubmit: (values) => {
-			navigate("/auth/register");
+			setIsFlipping(!isFlipping);
+			setTimeout(() => navigate("/auth/register"), 500);
 		},
 	});
+	let arr = [];
+	useEffect(() => {
+		if (formik.errors.email && formik.touched.email)
+			arr.push(formik.errors.email);
+		if (formik.errors.password && formik.touched.password)
+			arr.push(formik.errors.password);
+		if (!formik.errors) {
+			arr = [];
+		}
+		arr.length > 0 ? setErrorMessages(arr) : setErrorMessages(null);
+	}, [formik.errors, formik.touched]);
 	return (
-		<form className={css.form} onSubmit={formik.handleSubmit}>
+		<form className={formClasses} onSubmit={formik.handleSubmit}>
+			<ErrorMessages errors={errorMessages} />
 			<h1 className={css.form__title}>Sign in</h1>
 			<div className={css.input__container}>
 				<input
@@ -45,9 +65,6 @@ export default function LoginForm() {
 						}
 					}
 				/>
-				{formik.touched.email && formik.errors.email && (
-					<ErrorMessage error={formik.errors.email} />
-				)}
 
 				<input
 					className={css.input}
@@ -65,9 +82,6 @@ export default function LoginForm() {
 						}
 					}
 				/>
-				{formik.touched.password && formik.errors.password && (
-					<ErrorMessage error={formik.errors.password} />
-				)}
 			</div>
 
 			<button
@@ -80,7 +94,7 @@ export default function LoginForm() {
 				Don't have an account?{" "}
 				<NavLink to="/auth/register">Sign Up</NavLink>
 			</span>
-		
+
 			<NavLink to="/dash">Skip</NavLink>
 		</form>
 	);
