@@ -139,9 +139,8 @@ export default function RegisterForm() {
 
 			<span className={css.form__subtitle}>
 				Already have an account?{" "}
-				<NavLink to="/auth/login">Sign In</NavLink>
+				<NavLink to="/dash">Sign In</NavLink>
 			</span>
-			<NavLink to="/dash">Skip</NavLink>
 		</form>
 	);
 }

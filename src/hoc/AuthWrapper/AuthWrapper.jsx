@@ -1,9 +1,7 @@
 import React, { useMemo } from "react";
 import css from "./AuthWrapper.module.css";
 import SvgBackground from "../../components/UI/SvgBackground/SvgBackground";
-import WelcomeForm from "../../components/Auth/WelcomeForm/WelcomeForm";
-import LoginForm from "../../components/Auth/LoginForm/LoginForm";
-import RegisterForm from "../../components/Auth/RegisterForm/RegisterForm";
+import { Link } from "react-router-dom";
 
 export default function AuthWrapper({ wrappedComponent }) {
 	const color = useMemo(() => {
@@ -36,6 +34,13 @@ export default function AuthWrapper({ wrappedComponent }) {
 				{wrappedComponent}
 			</div>
 			<SvgBackground color={color} />
+			<div className={css.auth__skip}>
+				<span>
+					This is just a test sample, so you can{" "}
+					<Link style={{color: "#dbdfea"}} to="/dash">skip the authentication step</Link>
+					{" "}and go to the main menu.
+				</span>
+			</div>
 		</div>
 	);
 }

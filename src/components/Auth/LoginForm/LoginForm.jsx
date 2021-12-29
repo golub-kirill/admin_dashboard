@@ -94,8 +94,6 @@ export default function LoginForm() {
 				Don't have an account?{" "}
 				<NavLink to="/auth/register">Sign Up</NavLink>
 			</span>
-
-			<NavLink to="/dash">Skip</NavLink>
 		</form>
 	);
 }

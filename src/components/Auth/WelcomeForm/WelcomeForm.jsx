@@ -68,7 +68,6 @@ export default function WelcomeForm({ errorsHandler }) {
 				disabled={!formik.isValid}>
 				Get Started
 			</button>
-			<NavLink to="/dash">Skip</NavLink>
 		</form>
 	);
 }

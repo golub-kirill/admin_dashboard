@@ -37,7 +37,7 @@ export default function Sidebar() {
 				Support
 			</SidebarButton>
 			<Divider />
-			<SidebarButton iconPath={"/img/buttonIcons/logout.svg"} to="auth/welcome">
+			<SidebarButton iconPath={"/img/buttonIcons/logout.svg"} to="/">
 				Log out
 			</SidebarButton>
 		</div>
