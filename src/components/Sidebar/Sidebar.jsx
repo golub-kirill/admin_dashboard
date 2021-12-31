@@ -11,9 +11,6 @@ export default function Sidebar() {
 			<SidebarButton iconPath={"/img/buttonIcons/dashboard.svg"} to="dash">
 				Dashboard
 			</SidebarButton>
-			<SidebarButton iconPath={"/img/buttonIcons/userProfile.svg"} to="user">
-				User profile
-			</SidebarButton>
 			<SidebarButton iconPath={"/img/buttonIcons/messages.svg"}>
 				Messages
 			</SidebarButton>

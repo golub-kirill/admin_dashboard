@@ -7,7 +7,7 @@
 	display: flex;
 	flex-flow: row nowrap;
 	width: 60vw;
-	height: fit-content;
+	
 }
 
 tspan {
