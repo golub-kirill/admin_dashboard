@@ -8,10 +8,10 @@ export default function Sidebar() {
 		<div className={css.sidebar__wrapper}>
 			<img src="/logo.svg" alt="logo" className={css.logo} />
 			<Divider />
-			<SidebarButton iconPath={"/img/buttonIcons/dashboard.svg"} to="dash">
+			<SidebarButton iconPath={"/img/buttonIcons/dashboard.svg"} to="">
 				Dashboard
 			</SidebarButton>
-			<SidebarButton iconPath={"/img/buttonIcons/messages.svg"}>
+			<SidebarButton iconPath={"/img/buttonIcons/messages.svg"} to="msg">
 				Messages
 			</SidebarButton>
 			<SidebarButton iconPath={"/img/buttonIcons/transactions.svg"}>

@@ -11,7 +11,7 @@ export default function Details() {
 	return (
 		<div className={css.details__wrapper}>
 			<img className={css.details__avatar} src={avatarSrc} />
-			<NavLink to="/user" replace className={css.details__name}>{name}</NavLink>
+			<NavLink to="/" replace className={css.details__name}>{name}</NavLink>
 			<img
 				className={css.details__arrow}
 				src="/img/navbarIcons/chevron.svg"

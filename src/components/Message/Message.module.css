@@ -1,0 +1,29 @@
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #24263a;
+    color: #dbdfea;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.message__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    filter: invert(99%) sepia(84%) saturate(582%) hue-rotate(177deg) brightness(97%) contrast(88%)
+}
+
+.message__icon_error {
+    filter: invert(33%) sepia(31%) saturate(5656%) hue-rotate(336deg) brightness(91%) contrast(92%);
+}
+
+.message span {
+    margin-right: 2rem;
+    font-size: 18px;
+}
