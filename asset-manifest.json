@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/admin-dashboard/static/css/main.5967f23b.css",
-    "main.js": "/admin-dashboard/static/js/main.a23e0824.js",
-    "static/media/settings.svg": "/admin-dashboard/static/media/settings.6ee41cd39866ce5951ab0397e6d671cb.svg",
-    "static/media/support.svg": "/admin-dashboard/static/media/support.f59ec701c3ec83211d18a9c0d8060e79.svg",
-    "static/media/waves3.svg": "/admin-dashboard/static/media/waves3.eafb2a917e9b334c2a100ff5172d89a5.svg",
-    "static/media/waves2.svg": "/admin-dashboard/static/media/waves2.22e4efcf26f7495e213e191aca79b295.svg",
-    "static/media/waves.svg": "/admin-dashboard/static/media/waves.7c7a3c354f361cc59efde0bf177c217a.svg",
-    "static/media/reports.svg": "/admin-dashboard/static/media/reports.2fd1fbb5636beafb16400c765a008c48.svg",
-    "static/media/payment.svg": "/admin-dashboard/static/media/payment.590b2143d7f399a9582e19aa4e0f584c.svg",
-    "static/media/dashboard.svg": "/admin-dashboard/static/media/dashboard.f81d888bd492d4cdf52ebb5fb827eeda.svg",
-    "static/media/myWallet.svg": "/admin-dashboard/static/media/myWallet.ca96180323ca410f94e89323dcd42dd2.svg",
-    "static/media/transactions.svg": "/admin-dashboard/static/media/transactions.ebf68d1c4412b4b8d6ee9efebc7f1c43.svg",
-    "static/media/logout.svg": "/admin-dashboard/static/media/logout.bf947857fa49f867cf0c107c04ac73f2.svg",
-    "static/media/messages.svg": "/admin-dashboard/static/media/messages.7929beca156a66a0caa7769256c455e0.svg",
-    "index.html": "/admin-dashboard/index.html",
-    "static/media/search.svg": "/admin-dashboard/static/media/search.b7dae270f9fd0caf9ad04c7becf3d8c3.svg",
-    "static/media/user.svg": "/admin-dashboard/static/media/user.1ef8395ef183ff1018e13ca340fbdc70.svg",
-    "static/media/arrow_down.svg": "/admin-dashboard/static/media/arrow_down.5e888e69c4edd4df6260f867d7067bc8.svg",
-    "static/media/arrow_up.svg": "/admin-dashboard/static/media/arrow_up.0d5f882e3f04aafba91a73b5fb935f53.svg",
-    "static/media/chevron.svg": "/admin-dashboard/static/media/chevron.968088ed9ca371a4f579b9c6acc202fd.svg",
-    "main.5967f23b.css.map": "/admin-dashboard/static/css/main.5967f23b.css.map",
-    "main.a23e0824.js.map": "/admin-dashboard/static/js/main.a23e0824.js.map"
+    "main.css": "/admin_dashboard/static/css/main.5967f23b.css",
+    "main.js": "/admin_dashboard/static/js/main.df34e1b2.js",
+    "static/media/settings.svg": "/admin_dashboard/static/media/settings.6ee41cd39866ce5951ab0397e6d671cb.svg",
+    "static/media/support.svg": "/admin_dashboard/static/media/support.f59ec701c3ec83211d18a9c0d8060e79.svg",
+    "static/media/waves3.svg": "/admin_dashboard/static/media/waves3.eafb2a917e9b334c2a100ff5172d89a5.svg",
+    "static/media/waves2.svg": "/admin_dashboard/static/media/waves2.22e4efcf26f7495e213e191aca79b295.svg",
+    "static/media/waves.svg": "/admin_dashboard/static/media/waves.7c7a3c354f361cc59efde0bf177c217a.svg",
+    "static/media/reports.svg": "/admin_dashboard/static/media/reports.2fd1fbb5636beafb16400c765a008c48.svg",
+    "static/media/payment.svg": "/admin_dashboard/static/media/payment.590b2143d7f399a9582e19aa4e0f584c.svg",
+    "static/media/dashboard.svg": "/admin_dashboard/static/media/dashboard.f81d888bd492d4cdf52ebb5fb827eeda.svg",
+    "static/media/myWallet.svg": "/admin_dashboard/static/media/myWallet.ca96180323ca410f94e89323dcd42dd2.svg",
+    "static/media/transactions.svg": "/admin_dashboard/static/media/transactions.ebf68d1c4412b4b8d6ee9efebc7f1c43.svg",
+    "static/media/logout.svg": "/admin_dashboard/static/media/logout.bf947857fa49f867cf0c107c04ac73f2.svg",
+    "static/media/messages.svg": "/admin_dashboard/static/media/messages.7929beca156a66a0caa7769256c455e0.svg",
+    "index.html": "/admin_dashboard/index.html",
+    "static/media/search.svg": "/admin_dashboard/static/media/search.b7dae270f9fd0caf9ad04c7becf3d8c3.svg",
+    "static/media/user.svg": "/admin_dashboard/static/media/user.1ef8395ef183ff1018e13ca340fbdc70.svg",
+    "static/media/arrow_down.svg": "/admin_dashboard/static/media/arrow_down.5e888e69c4edd4df6260f867d7067bc8.svg",
+    "static/media/arrow_up.svg": "/admin_dashboard/static/media/arrow_up.0d5f882e3f04aafba91a73b5fb935f53.svg",
+    "static/media/chevron.svg": "/admin_dashboard/static/media/chevron.968088ed9ca371a4f579b9c6acc202fd.svg",
+    "main.5967f23b.css.map": "/admin_dashboard/static/css/main.5967f23b.css.map",
+    "main.df34e1b2.js.map": "/admin_dashboard/static/js/main.df34e1b2.js.map"
   },
   "entrypoints": [
     "static/css/main.5967f23b.css",
-    "static/js/main.a23e0824.js"
+    "static/js/main.df34e1b2.js"
   ]
 }
