@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/admin_dashboard/static/css/main.5967f23b.css",
-    "main.js": "/admin_dashboard/static/js/main.df34e1b2.js",
+    "main.js": "/admin_dashboard/static/js/main.855d84ed.js",
     "static/media/settings.svg": "/admin_dashboard/static/media/settings.6ee41cd39866ce5951ab0397e6d671cb.svg",
     "static/media/support.svg": "/admin_dashboard/static/media/support.f59ec701c3ec83211d18a9c0d8060e79.svg",
     "static/media/waves3.svg": "/admin_dashboard/static/media/waves3.eafb2a917e9b334c2a100ff5172d89a5.svg",
@@ -21,10 +21,10 @@
     "static/media/arrow_up.svg": "/admin_dashboard/static/media/arrow_up.0d5f882e3f04aafba91a73b5fb935f53.svg",
     "static/media/chevron.svg": "/admin_dashboard/static/media/chevron.968088ed9ca371a4f579b9c6acc202fd.svg",
     "main.5967f23b.css.map": "/admin_dashboard/static/css/main.5967f23b.css.map",
-    "main.df34e1b2.js.map": "/admin_dashboard/static/js/main.df34e1b2.js.map"
+    "main.855d84ed.js.map": "/admin_dashboard/static/js/main.855d84ed.js.map"
   },
   "entrypoints": [
     "static/css/main.5967f23b.css",
-    "static/js/main.df34e1b2.js"
+    "static/js/main.855d84ed.js"
   ]
 }
