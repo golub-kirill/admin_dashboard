@@ -5,15 +5,15 @@ import LastTransactionItem from "./LastTransactionItem/LastTransactionItem";
 export default function LastTransactions() {
 	const [transactions] = React.useState([
 		{
-			title: "Пополнение баланса",
+			title: "Balance income",
 			amount: 10.45,
 		},
 		{
-			title: "Доход от продажи",
+			title: "Sales income",
 			amount: 300,
 		},
 		{
-			title: "Расход на покупку",
+			title: "Purchase expense",
 			amount: -310.45,
 		},
 	]);
