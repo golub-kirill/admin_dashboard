@@ -6,6 +6,8 @@ import IncomeChart from "../components/Dashboard/IncomeChart/IncomeChart";
 import LastTransactions from "../components/Dashboard/LastTransactions/LastTransactions";
 import Card from "../components/Dashboard/Card/Card";
 import Leftovers from "../components/Dashboard/Leftovers/Leftovers";
+import waves2Svg from "../assets/totalIndicatorIcons/waves2.svg"
+import waves3Svg from "../assets/totalIndicatorIcons/waves3.svg"
 
 export default function Dashboard() {
 	return (
@@ -23,13 +25,13 @@ export default function Dashboard() {
 								title="Total Expence"
 								value="1,300"
 								collation="-1.4"
-								waves={"/img/totalIndicatorIcons/waves2.svg"}
+								waves={waves2Svg}
 							/>
 							<TotalIndicator
 								title="Total Savings"
 								value="8,450"
 								collation="32.7"
-								waves={"/img/totalIndicatorIcons/waves3.svg"}
+								waves={waves3Svg}
 							/>
 						</div>
 						<SalesChart />

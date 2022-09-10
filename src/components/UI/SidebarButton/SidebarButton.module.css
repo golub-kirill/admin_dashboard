@@ -5,10 +5,14 @@
 	align-items: center;
 	border: none;
 	background: #24263a;
-	color: #dbdfea;
 	padding: 0.5rem 0;
 	font-size: 1em;
 	transition: all 0.2s ease-in-out;
+}
+
+.sidebarButton:hover {
+	scale: 1.1;
+	background: #1d1e2c;
 }
 
 .sidebarButtonIcon {

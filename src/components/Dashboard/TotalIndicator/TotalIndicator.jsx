@@ -1,5 +1,9 @@
 import React from "react";
 import css from "./TotalIndicator.module.css";
+import wavesSvg from "../../../assets/totalIndicatorIcons/waves.svg"
+import arrow_up from "../../../assets/totalIndicatorIcons/arrow_up.svg"
+import arrow_down from "../../../assets/totalIndicatorIcons/arrow_down.svg"
+
 
 export default function TotalIndicator({ title, value, collation, waves }) {
 	const [header] = React.useState(title || "Total Balance");
@@ -10,11 +14,11 @@ export default function TotalIndicator({ title, value, collation, waves }) {
 	);
 	const [collationIcon] = React.useState(
 		collationValue > 0
-			? "/img/totalIndicatorIcons/arrow_up.svg"
-			: "/img/totalIndicatorIcons/arrow_down.svg"
+			? arrow_up
+			: arrow_down
 	);
 	const [wavesSrc] = React.useState(
-		waves || "/img/totalIndicatorIcons/waves.svg"
+		waves || wavesSvg
 	);
 
 	return (
